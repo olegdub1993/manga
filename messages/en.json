@@ -1,0 +1,19 @@
+{
+  "HomePage": {
+    "title": "Helloccorld!",
+    "project": "Work | Project:",
+    "colection_name": "child's enxiety",
+    "pictures": "pictures",
+    "manga": "manga",
+    "gallery": "gallery",
+    "about": "about the artist"
+  },
+  "AboutPage": {
+    "title": "about!",
+    "about1": "I was born on January 26, 2006, in Ivano-Frankivsk, Ukraine. Since childhood, I loved to draw — with paints, pencils, markers — and it became my way of being myself. Although I was a quiet and introverted child, I felt most at ease near my parents and a blank sheet of paper. One of my first memories of drawing is when I created a whole series of little cars while we were stuck in traffic. I simply looked at the world around me and transferred it directly onto paper.",
+    "about2": "Manga became my main creative path. At 18, I self-published my debut manga as a birthday gift to myself when I turned 19 — a symbol of stepping into adult creative life. That work was deeply personal to me; it reflected years of inner searching and emotional reflection from age 14 to 17.",
+    "about3": "I am completely self-taught — everything I can do, I’ve learned on my own. Independence is important to me. I follow an underground path in art. I create by my own rules. I write first and foremost for myself, as a reader. I have my own sense of beauty, rhythm, morality, and structure — and I don’t expect everyone to understand or accept it.",
+    "about4": "The themes that matter most in my work are inner reflection, childhood, embodiment, solitude, the connection between soul and body, abstraction, and the blend of beauty and grotesque. I experiment with forms and methods in order to discover a new visual language. My goal is to speak to people through images — to show them my world as I see it.",
+    "about5": "For me, making art is not an escape. It is truth. It is my way of existing."
+  }
+}
