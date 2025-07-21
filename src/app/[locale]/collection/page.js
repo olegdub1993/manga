@@ -5,7 +5,7 @@ import { useState } from 'react';
 const imageNames = Array.from({ length: 30 }, (_, i) => `IMG_${i + 1}.JPEG`);
 
 import {useTranslations} from 'next-intl';
-
+import Tabs from '@/components/Tabs';
 export default function Collection () {
   const t = useTranslations('HomePage');
 
@@ -24,6 +24,9 @@ export default function Collection () {
   };
 
   return (
+     <div className="max-w-4xl mx-auto  px-4 py-8 border-l-2  pb-20 border-r-2 border-gray-200">
+              <h1 className="text-6xl font-extrabold  mt-20 mb-12 flex justify-center uppercase">Taisia Kamski</h1>
+              <Tabs/>
  <div className='px-12'>
       <div className='mb-4 text-2xl uppercase font-bold'>{t('gallery')}/<span className='lowercase'>{t('colection_name')}</span></div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 '>
@@ -48,7 +51,7 @@ export default function Collection () {
           >
             <Image src="/left-arrow.svg" alt="Previous" width={24} height={24} />
           </button>
-          
+
           <Image
             src={`/collection/${imageNames[currentIndex]}`}
             width={1200}
@@ -67,6 +70,6 @@ export default function Collection () {
         </div>
       )}
     </div>
-
+</div>
   );
 }

@@ -22,11 +22,9 @@ export default async function LocaleLayout({
       <body className="bg-white text-black ">
         <NextIntlClientProvider> 
           <Header/>
-          <div className="max-w-4xl mx-auto  px-4 py-8 border-l-2  pb-20 border-r-2 border-gray-200">
-          <h1 className="text-6xl font-extrabold  mt-20 mb-12 flex justify-center uppercase">Taisia Kamski</h1>
-          <Tabs/>
+        
           {children}
-          </div>
+     
           <Footer/>
           </NextIntlClientProvider>
       </body>

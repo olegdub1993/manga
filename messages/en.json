@@ -6,7 +6,9 @@
     "pictures": "pictures",
     "manga": "manga",
     "gallery": "gallery",
-    "about": "about the artist"
+    "about": "about the artist",
+    "next": "next chapter",
+    "previous": "previous chapter"
   },
   "AboutPage": {
     "title": "about!",
