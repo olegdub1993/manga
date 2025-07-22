@@ -28,7 +28,7 @@ export default function Header() {
   const t = useTranslations('HomePage');
 
   return (
-    <header className="flex fixed top-0 w-full justify-end items-center p-4 px-10 font-extrabold uppercase text-lg">
+    <header className="flex z-10 fixed top-0  after:content-[''] after:absolute after:left-[50%] after:translate-x-[-50%] after:bottom-0 after:w-[92%] after:border-b after:border-[#BEC0BF] sm:after:w-[96%] md:after:w-0 bg-white w-full justify-end items-center p-4 px-8  md:px-10 font-extrabold uppercase text-lg ">
       <div className="flex items-center gap-1">
         {Object.entries(languages).map(([code, label]) => (
           <div

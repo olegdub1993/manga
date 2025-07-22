@@ -21,14 +21,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex justify-center uppercase text-2xl font-extrabold gap-12 mb-8">
+    <nav className="flex justify-center uppercase text-sm sm:text-xl  md:text-2xl font-extrabold gap-2 sm:gap-4 md:gap-12 mb-8 ">
       {links.map((link) => {
         const isActive = normalizedPath === link.href || normalizedPath === link.subpath;
         return (
           <Link
             key={link.href}
             href={`/${locale}${link.href}`}
-            className={isActive ? 'px-4 border-b-5  border-[#BEC0BF]' : 'px-4'}
+            className={isActive ? 'px-2 md:px-4 border-b-5  border-[#BEC0BF]' : 'px-2 md:px-4 '}
           >
             {link.label}
           </Link>

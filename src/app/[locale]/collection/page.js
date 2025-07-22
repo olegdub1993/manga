@@ -25,13 +25,13 @@ export default function Collection () {
 
   return (
      <div className="max-w-4xl mx-auto  px-4 py-8 border-l-2  pb-20 border-r-2 border-gray-200">
-              <h1 className="text-6xl font-extrabold  mt-20 mb-12 flex justify-center uppercase">Taisia Kamski</h1>
+              <h1 className="text-6xl font-extrabold   text-center  mt-20 mb-12 flex justify-center uppercase">Taisia Kamski</h1>
               <Tabs/>
- <div className='px-12'>
+ <div className='sm:px-8 md:px-12'>
       <div className='mb-4 text-2xl uppercase font-bold'>{t('gallery')}/<span className='lowercase'>{t('colection_name')}</span></div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 '>
+      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8 '>
         {imageNames.map((name, index) => (
-          <div key={name}  onClick={() => setCurrentIndex(index)} className='relative w-full h-42  cursor-pointer'>
+          <div key={name}  onClick={() => setCurrentIndex(index)} className='relative w-full h-32 sm:h-42  cursor-pointer'>
             <Image src={`/collection/${name}`} alt="picture" fill  />
           </div>
         ))}
@@ -39,15 +39,15 @@ export default function Collection () {
       {currentIndex !== null && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center">
           <button 
-            className="absolute top-4 cursor-pointer right-4 text-white p-2 hover:scale-110 transition"
+            className="absolute top-4 cursor-pointer right-4  rounded-full bg-black text-white p-3 hover:scale-110 transition"
             onClick={closeModal}
           >
-            <Image src="/close.svg" alt="Close" width={24} height={24} />
+            <Image src="/close.svg" alt="Close" width={20} height={20} />
           </button>
 
           <button
             onClick={showPrev}
-            className="absolute left-4 cursor-pointer text-white p-2 hover:scale-110 transition"
+            className="absolute left-4  rounded-full bg-black text-white cursor-pointer p-2 hover:scale-110 transition"
           >
             <Image src="/left-arrow.svg" alt="Previous" width={24} height={24} />
           </button>
@@ -63,7 +63,7 @@ export default function Collection () {
           {/* Next button */}
           <button
             onClick={showNext}
-            className="absolute right-4 text-white cursor-pointer p-2 hover:scale-110 transition"
+            className="absolute right-4 rounded-full bg-black text-white cursor-pointer p-2 hover:scale-110 transition"
           >
            <Image src="/right-arrow.svg" alt="Next" width={24} height={24} />
           </button>
