@@ -31,8 +31,13 @@ export default function Collection () {
       <div className='mb-4 text-2xl uppercase font-bold'>{t('gallery')}/<span className='lowercase'>{t('colection_name')}</span></div>
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8 '>
         {imageNames.map((name, index) => (
-          <div key={name}  onClick={() => setCurrentIndex(index)} className='relative w-full h-32 sm:h-42  cursor-pointer'>
-            <Image src={`/collection/${name}`} alt="picture" fill  />
+          <div key={name}  >
+            <div  onClick={() => setCurrentIndex(index)} className='relative w-full h-32 sm:h-42  cursor-pointer'>
+              <Image src={`/collection/${name}`} alt="picture" fill  />
+            </div>
+            <div className='text-center text-md font-extrabold mt-2'>{t('picture_description')}</div>
+            <div className='text-center text-md  font-extrabold mt-1'>21 × 29.7 cm</div>
+            <div className='text-center text-md  font-extrabold mt-1'>2024</div>
           </div>
         ))}
       </div>

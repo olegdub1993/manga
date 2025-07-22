@@ -1,14 +1,15 @@
 {
   "HomePage": {
-    "title": "Helloccorld!",
+    "title": "Hello world!",
     "project": "Work | Project:",
-    "colection_name": "child's enxiety",
+    "colection_name": "epitaph",
     "pictures": "pictures",
     "manga": "manga",
     "gallery": "gallery",
     "about": "about the artist",
     "next": "next chapter",
-    "previous": "previous chapter"
+    "previous": "previous chapter",
+    "picture_description": "Ink on paper"
   },
   "AboutPage": {
     "title": "about!",
@@ -17,5 +18,27 @@
     "about3": "I am completely self-taught — everything I can do, I’ve learned on my own. Independence is important to me. I follow an underground path in art. I create by my own rules. I write first and foremost for myself, as a reader. I have my own sense of beauty, rhythm, morality, and structure — and I don’t expect everyone to understand or accept it.",
     "about4": "The themes that matter most in my work are inner reflection, childhood, embodiment, solitude, the connection between soul and body, abstraction, and the blend of beauty and grotesque. I experiment with forms and methods in order to discover a new visual language. My goal is to speak to people through images — to show them my world as I see it.",
     "about5": "For me, making art is not an escape. It is truth. It is my way of existing."
+  },
+  "MangaPage": {
+    "description_word": "description",
+    "description": "IT IS SUCH A CACOPHONY, FULL OF SHARP, UNPLEASANT CLUMPS OF THOUGHTS ABOUT MY LIFE, THAT VERY FEW PEOPLE, I THINK, WILL PROBABLY BE ABLE TO STAND IT EVEN ONCE, LET ALONE READ IT AGAIN. A MIXTURE OF SCREAMS, SQUEALS, AND WHEEZES. THIS IS MY REFLECTION, COLLECTED FROM MY MEMOIRS, STARTING FROM THE AGE OF 14 AND UP TO THE LAST WRITINGS AT THE AGE OF 17. I DEDICATE THIS WORK TO MYSELF AS A GIFT AND AS MY DEBUT AS A MANGAKA AT THE AGE OF 18.",
+    "theme": "Theme",
+    "psychological": "Psychological",
+    "audience": "Audience",
+    "teenagers": "Teenagers (13-18)",
+    "art_style": "Art Style",
+    "manga": "Manga",
+    "warning": "Warning",
+    "nudity": "Nudity",
+    "tags": "Tags",
+    "autobiography": "Autobiography",
+    "despair": "Despair",
+    "existentialism": "Existentialism",
+    "experimental_manga": "ExperimentalManga",
+    "inner_struggle": "InnerStruggle",
+    "loneliness": "Loneliness",
+    "reflection": "Reflection",
+    "search_for_identity": "SearchForIdentity",
+    "self_discovery": "SelfDiscovery"
   }
 }
