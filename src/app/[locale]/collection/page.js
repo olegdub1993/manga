@@ -2,12 +2,13 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-const imageNames = Array.from({ length: 30 }, (_, i) => `IMG_${i + 1}.JPEG`);
+const imageNames = Array.from({ length: 51 }, (_, i) => `IMG_${i + 1}.JPEG`);
 
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import Tabs from '@/components/Tabs';
 export default function Collection () {
   const t = useTranslations('HomePage');
+  const locale = useLocale();
 
   const [currentIndex, setCurrentIndex] = useState(null);
 
@@ -33,7 +34,7 @@ export default function Collection () {
         {imageNames.map((name, index) => (
           <div key={name}  >
             <div  onClick={() => setCurrentIndex(index)} className='relative w-full h-32 sm:h-42  cursor-pointer'>
-              <Image src={`/collection/${name}`} alt="picture" fill  />
+              <Image src={`/collection/${locale}/${name}`} alt="picture" fill  />
             </div>
             <div className='text-center text-md font-extrabold mt-2'>{t('picture_description')}</div>
             <div className='text-center text-md  font-extrabold mt-1'>21 × 29.7 cm</div>
@@ -58,7 +59,7 @@ export default function Collection () {
           </button>
 
           <Image
-            src={`/collection/${imageNames[currentIndex]}`}
+            src={`/collection/${locale}/${imageNames[currentIndex]}`}
             width={1200}
             height={800}
             alt={`Image ${currentIndex + 1}`}
